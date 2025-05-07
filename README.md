@@ -6,7 +6,7 @@ A training data generator for contrastive learning — designed to build triplet
 
 ## 🔗 Related Projects
 
-- ➕ Embedding pipeline: [rag-movie-embedding-pipeline](https://github.com/jj-tsao/rag-movie-embedding-pipeline)
+- 💬 Embedding pipeline: [rag-movie-embedding-pipeline](https://github.com/jj-tsao/rag-movie-embedding-pipeline)
 - 🎬 Frontend app: [rag-movie-recommender-app](https://github.com/jj-tsao/rag-movie-recommender-app)  
 - 🚀 Live demo: [Hugging Face Spaces](https://huggingface.co/spaces/JJTsao/RAG_Movie_Recommendation_Assistant)
 
@@ -132,4 +132,4 @@ python training_data_pipeline_main.py
 ---
 
 ## 📄 License
-MIT License
+[MIT License](https://github.com/jj-tsao/rag-movie-training-pipeline/blob/main/LICENSE)
