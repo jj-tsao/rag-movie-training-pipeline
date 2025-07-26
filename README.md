@@ -16,7 +16,7 @@ A training data generator for contrastive learning — designed to build triplet
 
 - 🎬 **Data Extraction**: Pulls movie metadata from TMDB (titles, genres, cast, plot, streaming, keywords, etc.)
 - 🧠 **Vibe Query Generation** — Uses GPT to generate tone/mood-driven natural language queries based on movie data for training
-- 🏷️ **Metadata Query Generation** — Defines templates to generate queries that focus on genres, stars, and themes for training
+- 🏷️ **Metadata Query Generation** — Defines templates to generate queries focusing on genres, stars, and themes for training
 - ⚖️ **Negative Sampling** — Hard negatives selected using genre contrast, theme mismatch, or similar stars
 - 🗃️ **Triplet Dataset Builder** — Outputs JSONL rows for training: `{query, positive, negative, source}`
 - 🧵 **Async + Cached** — Supports multithreaded GPT calls and caching to reduce API costs
