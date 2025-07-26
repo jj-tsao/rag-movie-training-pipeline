@@ -33,10 +33,11 @@ A training data generator for contrastive learning — designed to build triplet
 ## 🛠️ Tech Stack
 
 - Python 3.10+
-- OpenAI GPT-3.5 (for query generation)
 - TMDB API
+- OpenAI GPT-3.5 (for query generation)
 - TQDM + AsyncIO for batching
 - SentenceTransformers-compatible triplet output
+- Base models: `bge`, `miniLM`, `MPNet`
 
 ---
 
