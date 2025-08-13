@@ -1,18 +1,19 @@
-# 🧠 RAG Movie & TV Retriever Training Pipeline
+# RAG Movie & TV Retriever Training Pipeline
 
 A training data generator for contrastive learning — designed to build triplet datasets (query, positive, negative) for fine-tuning embedding models to power smarter movie/TV recommendations.
 
 ---
 
-## 🔗 Related Projects
+## Related Projects
 
-- 💬 Embedding pipeline: [rag-movie-embedding-pipeline](https://github.com/jj-tsao/rag-movie-embedding-pipeline)
-- 🎬 Frontend app: [rag-movie-recommender-app](https://github.com/jj-tsao/rag-movie-recommender-app)  
+- 🚀 Live Product: [**Reelix AI**](https://reelixai.netlify.app/) 
+- 🎬 Frontend app repo: [rag-movie-recommender-app](https://github.com/jj-tsao/rag-movie-recommender-app)  
+- 💬 Embedding pipeline repo: [rag-movie-embedding-pipeline](https://github.com/jj-tsao/rag-movie-embedding-pipeline)
 - 🚀 Live demo: [Hugging Face Spaces](https://huggingface.co/spaces/JJTsao/RAG_Movie_Recommendation_Assistant)
 
 ---
 
-## 📌 What It Does
+## What It Does
 
 - 🎬 **Data Extraction**: Pulls movie metadata from TMDB (titles, genres, cast, plot, streaming, keywords, etc.)
 - 🧠 **Vibe Query Generation** — Uses GPT to generate tone/mood-driven natural language queries based on movie data for training
@@ -23,14 +24,14 @@ A training data generator for contrastive learning — designed to build triplet
 
 ---
 
-## 💡 Use Cases
+## Use Cases
 
 - Fine-tune SentenceTransformers (e.g., `bge`, `miniLM`, `MPNet`) using MultipleNegativesRankingLoss or TripletLoss
 - Build training data for **semantic retrievers**, **hybrid search**, or **vibe-based discovery engines**
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠Tech Stack
 
 - Python 3.10+
 - TMDB API
@@ -41,7 +42,7 @@ A training data generator for contrastive learning — designed to build triplet
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repo
 
@@ -72,7 +73,7 @@ python training_data_pipeline_main.py
 
 ---
 
-## 🧪 Sample Output Format
+## Sample Output Format
 ```json
 {
   "query": "Mind-bending sci-fi films with deep emotional arcs",
