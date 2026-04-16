@@ -1,4 +1,4 @@
-# RAG Movie & TV Retriever Training Pipeline
+# Reelix Movie & TV Retriever Training Pipeline
 
 A training data generator for contrastive learning — designed to build triplet datasets (query, positive, negative) for fine-tuning embedding models to power smarter movie/TV recommendations.
 
@@ -6,21 +6,21 @@ A training data generator for contrastive learning — designed to build triplet
 
 ## Related Projects
 
-- 🚀 Live Product: [**Reelix AI**](https://reelixai.netlify.app/) 
-- 🎬 Frontend app repo: [rag-movie-recommender-app](https://github.com/jj-tsao/rag-movie-recommender-app)  
-- 💬 Embedding pipeline repo: [rag-movie-embedding-pipeline](https://github.com/jj-tsao/rag-movie-embedding-pipeline)
-- 🚀 Live demo: [Hugging Face Spaces](https://huggingface.co/spaces/JJTsao/RAG_Movie_Recommendation_Assistant)
+- Live Product: [**Reelix AI**](https://reelixai.netlify.app/) 
+- Frontend app repo: [rag-movie-recommender-app](https://github.com/jj-tsao/rag-movie-recommender-app)  
+- Embedding pipeline repo: [rag-movie-embedding-pipeline](https://github.com/jj-tsao/rag-movie-embedding-pipeline)
+- Live demo: [Hugging Face Spaces](https://huggingface.co/spaces/JJTsao/RAG_Movie_Recommendation_Assistant)
 
 ---
 
 ## What It Does
 
-- 🎬 **Data Extraction**: Pulls movie metadata from TMDB (titles, genres, cast, plot, streaming, keywords, etc.)
-- 🧠 **Vibe Query Generation** — Uses GPT to generate tone/mood-driven natural language queries based on movie data for training
-- 🏷️ **Metadata Query Generation** — Defines templates to generate queries focusing on genres, stars, and themes for training
-- ⚖️ **Negative Sampling** — Hard negatives selected using genre contrast, theme mismatch, or similar stars
-- 🗃️ **Triplet Dataset Builder** — Outputs JSONL rows for training: `{query, positive, negative, source}`
-- 🧵 **Async + Cached** — Supports multithreaded GPT calls and caching to reduce API costs
+- **Data Extraction**: Pulls movie metadata from TMDB (titles, genres, cast, plot, streaming, keywords, etc.)
+- **Vibe Query Generation** — Uses GPT to generate tone/mood-driven natural language queries based on movie data for training
+- **Metadata Query Generation** — Defines templates to generate queries focusing on genres, stars, and themes for training
+- **Negative Sampling** — Hard negatives selected using genre contrast, theme mismatch, or similar stars
+- **Triplet Dataset Builder** — Outputs JSONL rows for training: `{query, positive, negative, source}`
+- **Async + Cached** — Supports multithreaded GPT calls and caching to reduce API costs
 
 ---
 
@@ -31,7 +31,7 @@ A training data generator for contrastive learning — designed to build triplet
 
 ---
 
-## 🛠Tech Stack
+## Tech Stack
 
 - Python 3.10+
 - TMDB API
@@ -85,7 +85,7 @@ python training_data_pipeline_main.py
 
 ---
 
-## 📂 Folder Overview
+## Folder Overview
 ```graphql
 ├── main.py               # Pipeline runner
 ├── tmdb_client.py        # Fetches TMDB movie data
@@ -100,7 +100,7 @@ python training_data_pipeline_main.py
 
 ---
 
-## 📈 Metrics
+## Metrics
 
 | Metric     | Fine-Tuned `bge-base-en-v1.5` | Base `bge-base-en-v1.5` |
 | ---------- | :---------------------------: | :---------------------: |
@@ -133,5 +133,5 @@ python training_data_pipeline_main.py
 
 ---
 
-## 📄 License
+## License
 [MIT License](https://github.com/jj-tsao/rag-movie-training-pipeline/blob/main/LICENSE)
