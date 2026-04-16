@@ -8,8 +8,6 @@ A training data generator for contrastive learning — designed to build triplet
 
 - Live Product: [**Reelix AI**](https://reelixai.netlify.app/) 
 - Frontend app repo: [rag-movie-recommender-app](https://github.com/jj-tsao/rag-movie-recommender-app)  
-- Embedding pipeline repo: [rag-movie-embedding-pipeline](https://github.com/jj-tsao/rag-movie-embedding-pipeline)
-- Live demo: [Hugging Face Spaces](https://huggingface.co/spaces/JJTsao/RAG_Movie_Recommendation_Assistant)
 
 ---
 
